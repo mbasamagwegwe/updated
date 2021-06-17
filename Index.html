@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Pandemic Low Bar Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index2.html ">HOME</a>
+        <a href="index.html ">CHECK UP</a>
+        <a href="index1.html">SENSOR</a>
+        <a href="index4.html">QUIZE</a>
+        <a href="contact.html ">Contact Us</a>
+
+    </div>
+    <h1>
+        <span>Low-</span>Bar-checkUp</h1>
+    <form name="quiz" method="post" name="buttons" id="form" onsubmit="return totalVal()">
+        <div class="question">Are you feeling feverish?</div>
+        <input id="answer" type="radio" name="group1" value="bad"> Yes<br>
+        <input id="answer" type="radio" name="group1" value="good"> No<br>
+        <br>
+        <div class="question">Do you have a headache?</div>
+        <input id="answer" type="radio" name="group2" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group2" value="good">No<br>
+        <br>
+        <div class="question">Is your temparature high?</div>
+        <input id="answer" type="radio" name="group3" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group3" value="good"> No<br>
+        <br>
+        <div class="question">Have you been feeling tired lately?</div>
+        <input id="answer" type="radio" name="group4" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group4" value="good"> No<br>
+        <br>
+        <div class="question">Do you have any difficulty in breathing?</div>
+        <input id="answer" type="radio" name="group5" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group5" value="good"> No<br>
+        <br>
+        <div class="question">Do you have any chest pains?</div>
+        <input id="answer" type="radio" name="group6" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group6" value="good"> No<br>
+        <br>
+        <div class="question">Have you experienced speech loss in the last few days?</div>
+        <input id="answer" type="radio" name="group7" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group7" value="good"> No<br>
+        <br>
+        <div class="question">Have you attended a funeral in the last 5 days?</div>
+        <input id="answer" type="radio" name="group8" value="bad">Yes<br>
+        <input id="answer" type="radio" name="group8" value="good"> No<br>
+        <br>
+
+        <div class="question">Do you have your sanitizer with you?</div>
+        <input id="answer" type="radio" name="group9" value="good">Yes<br>
+        <input id="answer" type="radio" name="group9" value="bad"> No<br>
+        <br>
+
+        <div class="question">Do you have your mask on?</div>
+        <input id="answer" type="radio" name="group10" value="good">Yes<br>
+        <input id="answer" type="radio" name="group10" value="bad"> No<br>
+        <br>
+        <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+
+</body>
+
+</html>

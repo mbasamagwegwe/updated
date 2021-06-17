@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="quize.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index2.html ">HOME</a>
+        <a href="index.html ">CHECK UP</a>
+        <a href="index1.html">SENSOR</a>
+        <a href="index4.html">QUIZE</a>
+        <a href="contact.html ">Contact Us</a>
+
+    </div>
+    <h3>level
+        <span>two</span>
+
+        <img src="crown.png"></h3>
+    <div class="content">
+        <p>1.what are two essential this you need to have to protect against covid?</p>
+        <input type="radio" name="question1" class="rad">glove &fruits<br>
+        <input type="radio" name="question1 " id="correct1">sanitizer&musk<br>
+        <input type="radio" name="question1 ">honey&lemon<br>
+        <p>2.Who is most vulnerable to covid?</p>
+        <input type="radio" name="question2 ">women
+        <br>
+        <input type="radio" name="question2 " id="correct2 ">older people<br>
+        <input type="radio" name="question2 ">everyone<br>
+        <p>3.What is the correct distance should be maintain?</p>
+        <input type="radio" name="question3 ">1,0 cm<br>
+        <input type="radio" name="question3 ">2.0<br>
+        <input type="radio" name="question3 " id="correct3 ">1,5<br>
+        <p>4.Is covid curable?</p>
+        <input type="radio" name="question4 ">Yes<br>
+        <input type="radio" name="question4 " id="correct4 ">No<br>
+        <p>5.After how many days does the symptoms show</p>
+        <input type="radio" name="question5 ">Immediatly<br>
+        <input type="radio" name="question5 ">2days<br>
+        <input type="radio" name="question5 " id="correct5 ">7days<br>
+
+        <input type="submit" name="submit " class="btn " value="submit" onclick="result() ">
+        <form action="https://formspree.io/f/mzbknrqe" method="post">
+
+            <input type="text" name="message">
+            <br>
+            <button type="submit " class="next">redeem
+            </button>
+        </form>
+    </div>
+
+
+    <script type="text/javascript ">
+        function result() {
+            var score = 0;
+            if (document.getElementById("correct1 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct2 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct3 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct4 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct5 ").checked) {
+                score++;
+            }
+            document.write("Your score is: " + score);
+        }
+    </script>
+</body>
+
+</html>
